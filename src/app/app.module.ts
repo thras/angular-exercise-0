@@ -2,13 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { UserInputComponent } from './user-input/user-input.component';
+import { EvenLengthWordsComponent } from './even-length-words/even-length-words.component';
+import { OddLengthWordsComponent } from './odd-length-words/odd-length-words.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserInputComponent,
+    EvenLengthWordsComponent,
+    OddLengthWordsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
