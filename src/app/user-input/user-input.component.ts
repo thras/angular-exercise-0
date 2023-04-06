@@ -9,8 +9,21 @@ import { NgForm } from '@angular/forms';
 export class UserInputComponent {
   @ViewChild(NgForm) form!: NgForm;
 
-  onSubmit(formData: any) {
+  onSubmit(userText: string) {
+    const even: string[] =[]
+    const odd: string[] = [];
+    const data = userText.split(" ");
+    for (var odj of data) {
+      if((odj.length%2) == 0){
+        odd.push(odj);
+      }else{
+        even.push(odj)
+      }
 
+    }
+
+    console.log(odd);
+    console.log(even);
   }
 
 
