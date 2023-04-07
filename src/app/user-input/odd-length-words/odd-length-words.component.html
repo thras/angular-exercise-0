@@ -2,7 +2,13 @@
     <div class="col">
         <p>
             <label for="">Odd words</label>
-            <input type="text" name="userText" class="form-control" ngModel />
+          
         </p>
+        <p>
+            <span *ngFor="let oddWord of oddTable"> 
+                {{ oddWord }} <br>
+            </span>
+        </p>
+
     </div>
 </div>

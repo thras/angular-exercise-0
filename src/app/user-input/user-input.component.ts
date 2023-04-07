@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -26,6 +26,7 @@ export class UserInputComponent {
       }
     console.log(this.odd);
     console.log(this.even);
+
   }
 
 
