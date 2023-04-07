@@ -7,23 +7,25 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./user-input.component.css']
 })
 export class UserInputComponent {
-  @ViewChild(NgForm) form!: NgForm;
+  even: string[] =[]
+  odd: string[] = [];
+
 
   onSubmit(userText: string) {
-    const even: string[] =[]
-    const odd: string[] = [];
+
     const data = userText.split(" ");
-    for (var odj of data) {
-      if((odj.length%2) == 0){
-        odd.push(odj);
-      }else{
-        even.push(odj)
+
+      for (var obj of data) {
+        if  (obj != ""){
+          if((obj.length%2) == 0){
+            this.even.push(obj);
+          }else{
+            this.odd.push(obj)
+          }
+        }
       }
-
-    }
-
-    console.log(odd);
-    console.log(even);
+    console.log(this.odd);
+    console.log(this.even);
   }
 
 

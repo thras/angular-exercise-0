@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { UserInputComponent } from './user-input/user-input.component';
-import { EvenLengthWordsComponent } from './even-length-words/even-length-words.component';
-import { OddLengthWordsComponent } from './odd-length-words/odd-length-words.component';
+import { EvenLengthWordsComponent } from './user-input/even-length-words/even-length-words.component';
+import { OddLengthWordsComponent } from './user-input/odd-length-words/odd-length-words.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 

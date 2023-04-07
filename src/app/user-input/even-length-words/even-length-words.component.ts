@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-even-length-words',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./even-length-words.component.css']
 })
 export class EvenLengthWordsComponent {
+
+  @Input() evenTable: string[] = [];
 
 }
