@@ -10,11 +10,8 @@ export class UserInputComponent {
   even: string[] =[]
   odd: string[] = [];
 
-
   onSubmit(userText: string) {
-
     const data = userText.split(" ");
-
       for (var obj of data) {
         if  (obj != ""){
           if((obj.length%2) == 0){
@@ -26,9 +23,6 @@ export class UserInputComponent {
       }
     console.log(this.odd);
     console.log(this.even);
-
   }
-
-
 
 }

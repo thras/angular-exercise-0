@@ -1,24 +1,17 @@
 <div class="row">
-    <div class="col">
-      
+    <div class="col">   
         <p>
           <label for="userText" class="form-label">User Text</label>
           <input #userInput type="text" name="userText" class="form-control" ngModel />
         </p>
-
         <p>
           <button (click)="onSubmit(userInput.value)" type="submit" class="btn btn-primary">Submit</button>
         </p>
-
     </div>
 
     <div class="row justify-content-center">
-      <div class="d-flex col-4 justify-content-center border border-primary"><app-even-length-words [evenTable] = "even"></app-even-length-words></div>
-      <div class="d-flex col-4 justify-content-center border border-primary"><app-odd-length-words [oddTable] = "odd"></app-odd-length-words></div>
+      <div class="d-flex col-4 justify-content-center border border-primary m-2"><app-even-length-words [evenTable] = "even"></app-even-length-words></div>
+      <div class="d-flex col-4 justify-content-center border border-primary m-2"><app-odd-length-words [oddTable] = "odd"></app-odd-length-words></div>
     </div>
-
-        <!-- <app-even-length-words [evenTable] = "even"></app-even-length-words>
-        
-        <app-odd-length-words [oddTable] = "odd"></app-odd-length-words> -->
-  </div>
+</div>
   
